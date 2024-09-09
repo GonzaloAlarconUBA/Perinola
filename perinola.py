@@ -10,7 +10,3 @@ class Perinola:
         self.cara_visible = choice(caras)
         return self.cara_visible
         
-    
-p = Perinola()
-resultado = p.tirar()
-print(resultado)
