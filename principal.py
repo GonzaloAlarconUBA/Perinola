@@ -1,5 +1,6 @@
     
 from apuesta import Apuesta
+from jugador import Jugador
 from perinola import Perinola
 
 
@@ -10,12 +11,6 @@ print(resultado)
 
 a = Apuesta()
 print(a)
-a.ponerFicha(4)
-print(a)
-a.ponerFicha()
-print(a)
-a.tomarFicha()
-print(a)
-a.tomarFicha(1)
-print(a)
 
+j = Jugador("Julian")
+print(j)

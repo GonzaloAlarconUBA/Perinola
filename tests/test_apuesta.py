@@ -15,8 +15,12 @@ def test_repr():
     assert("4" in msj)
 def test_ponerFicha():
     a = Apuesta()
-    a.ponerFicha(8)
-    assert(a.fichas == 8)
+    a.ponerFicha(1)
+    assert(a.fichas == 1)
+def test_ponerFicha_SinArgumento():
+    a = Apuesta()
+    a.ponerFicha()
+    assert(a.fichas == 1)
 def test_ponerVarias():
     a = Apuesta()
     a.ponerFicha(2)
@@ -27,3 +31,6 @@ def test_tomarFicha_error():
         a = Apuesta()
         a.fichas = 5
         a.tomarFicha(6)
+    a = Apuesta()
+    a.tomarFicha(5)
+    assert(a.tomarFicha)
