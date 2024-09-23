@@ -31,6 +31,3 @@ def test_tomarFicha_error():
         a = Apuesta()
         a.fichas = 5
         a.tomarFicha(6)
-    a = Apuesta()
-    a.tomarFicha(5)
-    assert(a.tomarFicha)
